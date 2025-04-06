@@ -2,5 +2,5 @@
 apiVersion: apps/v1v1
 kind: Namespace
 metadata:
-  name: prod
+  name: nginx
 #this for namespace
