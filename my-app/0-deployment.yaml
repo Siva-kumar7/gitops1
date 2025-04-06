@@ -19,6 +19,6 @@ spec:
       - name: nginx
         image: sivakumarvemana/nginx:v0.1.0
         ports:
-          -containerPort: 80
+        - containerPort: 80
 
 #this is for deployment
