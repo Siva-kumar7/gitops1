@@ -1,0 +1,22 @@
+apiVersion: app/v1
+kind: Deployment
+metadata:
+  name: nginx
+  Namespace: prod
+  labels:
+   app: nginx
+spec:
+  replicas: 1
+  selectors: 
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+    labels:
+      app: nginx
+    spec:
+      containers:
+        -name: nginx
+        image: sivakumarvemana/nginx:v0.1.0
+        ports:
+          -containerPort: 80
