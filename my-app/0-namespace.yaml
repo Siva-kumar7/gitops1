@@ -1,5 +1,6 @@
 
-apiVersion: v1
+apiVersion: apps/v1v1
 kind: Namespace
 metadata:
   name: prod
+#this for namespace
